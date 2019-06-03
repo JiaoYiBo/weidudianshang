@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mienv"
+    xmlns:leon="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="102dp"
+        >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/yuanjiao"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="10px"
+            android:layout_marginTop="40dp"
+            android:text="我是吃不怕的小姐姐"
+            android:layout_marginBottom="60px"
+            android:textSize="16sp" />
+        <com.leon.lib.settingview.LSettingItem
+            android:id="@+id/tv1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            leon:leftIcon="@mipmap/cee"
+            leon:leftText="个人设置" />
+
+        <com.leon.lib.settingview.LSettingItem
+            android:id="@+id/tv2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            leon:leftIcon="@mipmap/diqiua"
+            leon:leftText="我的圈子" />
+
+        <com.leon.lib.settingview.LSettingItem
+            android:id="@+id/tv3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            leon:leftIcon="@mipmap/yaya"
+            leon:leftText="我的足迹"
+            />
+
+        <com.leon.lib.settingview.LSettingItem
+            android:id="@+id/tv4"
+            android:layout_width="match_parent"
+            leon:leftIcon="@mipmap/page"
+            android:layout_height="wrap_content"
+            leon:leftText="我的钱包"
+            />
+        <com.leon.lib.settingview.LSettingItem
+            android:id="@+id/tv5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            leon:leftIcon="@mipmap/build"
+            leon:leftText="我的收获地址" />
+    </LinearLayout>
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/img"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/aaa"
+            android:layout_gravity="center"
+            android:layout_marginTop="-2dp"
+            android:layout_centerHorizontal="true"
+            />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".avtivity.PageActivity"
+    android:padding="10dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginBottom="5dp"
+    android:orientation="vertical"
+    >
+
+
+    <!-- 订单列表格 , 头部  -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:textColor="#666666"
+            android:textSize="20sp"
+            android:text="请选择支付方式:" />
+    </LinearLayout>
+
+    <!-- 订单列表格 ,  第一格  -->
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout01_orderfrag02"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/yuanjiao">
+        <RadioGroup
+            android:id="@+id/rg"
+            android:layout_width="match_parent"
+            android:layout_height="180dp">
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/img"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/yuer"
+         />
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="69dp"
+            android:layout_marginTop="-35dp"
+            android:layout_toRightOf="@+id/img"
+            android:padding="5dp"
+            android:singleLine="true"
+            android:text="余额付款"
+            android:textColor="#666666"
+            android:textSize="12sp" />
+
+        <RadioButton
+            android:id="@+id/ck1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="230dp"
+            android:checked="true"
+            android:layout_marginTop="-28dp" />
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/img1"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignBottom="@+id/price"
+            android:layout_marginBottom="-6dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/weixin" />
+
+        <TextView
+            android:id="@+id/price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-20dp"
+            android:layout_marginLeft="70dp"
+            android:text="微信付款"
+            android:textSize="14sp" />
+
+        <RadioButton
+            android:id="@+id/ck2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="230dp"
+            android:checked="false"
+            android:layout_marginTop="-28dp" />
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/img2"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignBottom="@+id/price"
+            android:layout_marginBottom="-66dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/zhifubao" />
+
+        <TextView
+            android:id="@+id/price2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="68dp"
+            android:layout_marginTop="35dp"
+            android:text="支付宝付款"
+            android:textSize="14sp" />
+
+        <RadioButton
+            android:id="@+id/ck3"
+            android:checked="false"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="230dp"
+            android:layout_marginTop="-28dp" />
+        </RadioGroup>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn3"
+        android:layout_width="260dp"
+        android:layout_height="40dp"
+        android:background="@drawable/yuanjiao"
+        android:text="去支付"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="@dimen/dp_100"
+        />
+
+</LinearLayout>

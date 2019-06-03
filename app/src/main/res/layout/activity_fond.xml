@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".avtivity.FondActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        >
+        <Button
+            android:id="@+id/popup"
+            android:layout_width="20dp"
+            android:layout_height="15dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/sousuo"
+            android:padding="15dp"
+            />
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/ed_text"
+            android:hint="来了，老弟。"
+            android:gravity="center"
+            android:textColor="#cccccc"
+            android:padding="10dp"
+            />
+        <TextView
+            android:id="@+id/sou"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="搜索"
+            android:textSize="15dp" />
+    </LinearLayout>
+    <GridView
+        android:id="@+id/gv"
+        android:layout_width="match_parent"
+        android:layout_weight="9"
+        android:layout_height="0dp"
+        android:numColumns="2"></GridView>
+</LinearLayout>

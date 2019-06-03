@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginBottom="5dp"
+    android:orientation="vertical"
+    >
+
+
+    <!-- 订单列表格 , 头部  -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#666666"
+            android:textSize="12sp"
+            android:text="订单号:" />
+        <TextView
+            android:id="@+id/text_frag04_orderfrag02_addNum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:textColor="#666666"
+            android:textSize="12sp"
+            android:layout_weight="1"
+            android:text="TextView" />
+        <TextView
+            android:id="@+id/text_frag04_orderfrag02_total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="0dp"
+            android:text="2018-12-13 20:08"
+            android:textColor="#666666"
+            android:textSize="14sp" />
+        <ImageView
+            android:id="@+id/text_frag04_orderfrag02_time"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+           />
+
+    </LinearLayout>
+
+    <!-- 订单列表格 ,  第一格  -->
+    <RelativeLayout
+        android:id="@+id/relativeLayout01_orderfrag02"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/yuanjiao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/img"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="8dp"
+            android:adjustViewBounds="true"
+            android:minHeight="50dp"
+            android:src="@mipmap/ic_launcher" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/img"
+            android:padding="5dp"
+            android:singleLine="true"
+            android:text="标题"
+            android:textColor="#666666"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/title"
+            android:layout_marginTop="40dp"
+            android:layout_toRightOf="@+id/img"
+            android:padding="5dp"
+            android:textSize="14sp"
+            android:text="￥价格"
+            android:textColor="#ff0606" />
+
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/text"
+        android:text="快递公司:   圆通速递"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+     <TextView
+    android:id="@+id/text1"
+    android:text="快递单号: 9987536133164"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/btn2"
+        android:text="确认收获"
+        android:layout_marginLeft="220dp"
+        android:layout_marginTop="-42dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+    </RelativeLayout>
+
+</LinearLayout>
